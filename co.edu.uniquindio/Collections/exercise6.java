@@ -1,3 +1,5 @@
+package Collections;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -45,7 +47,7 @@ class Products {
 
     @Override
     public String toString() {
-        return "Products{codigo='" + codigo + "', nombre='" + nombre
+        return "Collections.Products{codigo='" + codigo + "', nombre='" + nombre
                 + "', precio=" + precio + ", cantidad=" + cantidad + "}";
     }
 }
@@ -71,7 +73,7 @@ class InventarioTienda {
             throw new IllegalArgumentException("El producto no puede ser nulo.");
         }
         inventario.add(producto);
-        System.out.println("Producto agregado: " + producto);
+        System.out.println("Collections.Producto agregado: " + producto);
     }
 
     /**
@@ -82,7 +84,7 @@ class InventarioTienda {
         int tamanioAntes = inventario.size();
         inventario.removeIf(Products::estaAgotado);
         int eliminados = tamanioAntes - inventario.size();
-        System.out.println("Productos agotados eliminados: " + eliminados);
+        System.out.println("Collections.Productos agotados eliminados: " + eliminados);
     }
 
     /**

@@ -1,4 +1,5 @@
-import java.util.EmptyStackException;
+package Collections;
+
 import java.util.Stack;
 
 /**

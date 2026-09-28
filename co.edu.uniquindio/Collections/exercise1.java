@@ -1,9 +1,11 @@
+package Collections;
+
 import java.util.Objects;
 import java.util.Optional;
 import java.util.TreeSet;
 
 /**
- * Producto ordenado por código para poder guardarlo en un TreeSet.
+ * Collections.Producto ordenado por código para poder guardarlo en un TreeSet.
  */
 class Producto implements Comparable<Producto> {
     private final String codigo;
@@ -60,13 +62,13 @@ class Producto implements Comparable<Producto> {
 
     @Override
     public String toString() {
-        return String.format("Producto{codigo='%s', nombre='%s', precio=%.2f}",
+        return String.format("Collections.Producto{codigo='%s', nombre='%s', precio=%.2f}",
                 codigo, nombre, precio);
     }
 }
 
 /**
- * Empresa que mantiene su catálogo de productos en un TreeSet (sin duplicados y ordenado por código).
+ * Collections.Empresa que mantiene su catálogo de productos en un TreeSet (sin duplicados y ordenado por código).
  */
 class Empresa {
     private final String nombre;

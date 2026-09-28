@@ -1,3 +1,5 @@
+package Collections;
+
 import java.util.Objects;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -50,7 +52,7 @@ class Tarea implements Comparable<Tarea> {
 
     @Override
     public String toString() {
-        return "Tarea{nombre='" + nombre + "', prioridad=" + prioridad + "}";
+        return "Collections.Tarea{nombre='" + nombre + "', prioridad=" + prioridad + "}";
     }
 }
 
@@ -64,7 +66,7 @@ class ColaDeTareas {
     private final Queue<Tarea> cola;
 
     public ColaDeTareas() {
-        // PriorityQueue usa el compareTo() de Tarea para ordenar
+        // PriorityQueue usa el compareTo() de Collections.Tarea para ordenar
         this.cola = new PriorityQueue<>();
     }
 

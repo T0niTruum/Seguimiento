@@ -1,3 +1,5 @@
+package Collections;
+
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -31,7 +33,7 @@ class Productos{
 
     @Override
     public String toString() {
-        return "Producto{id=" + id + ", nombre='" + nombre + "', precio=" + precio + "}";
+        return "Collections.Producto{id=" + id + ", nombre='" + nombre + "', precio=" + precio + "}";
     }
 }
 
@@ -81,9 +83,7 @@ class ComparacionMapasProductos {
         }
     }
 
-    /*"\n=== Diferencias entre HashMap, LinkedHashMap y TreeMap ===");
-
-        System.out.println("""
+    /*=== Diferencias entre HashMap, LinkedHashMap y TreeMap ===
 
                 1) HashMap:
                    - No garantiza ningún orden en las claves; el orden depende del
@@ -109,6 +109,5 @@ class ComparacionMapasProductos {
                    - No permite claves null.
                    - Se usa cuando se necesita mantener los datos ordenados
                      en todo momento (por ejemplo, ordenar productos por id).
-                """);
-    }*/
+*/
 }
